@@ -1,60 +1,108 @@
-# SHEYCARS
+# 🚀 SheyCars - Car Rental System 🚗
+
+## 📖 Description
+
+SheyCars is a full-stack Node.js application that enables users to book cars for rent. The system allows users to register, login, and view available cars. Users can also book cars and view their booking history. The application is built using React, Express, MongoDB, and Redux.
+
+SheyCars is designed to provide a seamless user experience, with features such as car filtering, sorting, and pagination. The application also includes a Stripe payment gateway for secure transactions.
+
+## ✨ Features
+
+1. ✨ User Registration and Login: Users can register and login to the system using their email and password.
+2. ✨ Car Listing: The system displays a list of available cars, with filtering and sorting options.
+3. ✨ Booking System: Users can book cars for rent, with options to select the car, date, and time.
+4. ✨ Payment Gateway: The system uses Stripe to process payments securely.
+5. ✨ Booking History: Users can view their booking history, with options to cancel or update bookings.
+6. ✨ Car Filtering: Users can filter cars by make, model, and location.
+7. ✨ Car Sorting: Users can sort cars by price, rating, and availability.
+8. ✨ Pagination: The system displays cars in a paginated format, with options to navigate through pages.
+9. ✨ Error Handling: The system includes error handling for unexpected errors and exceptions.
+10. ✨ Responsive Design: The application is designed to be responsive, with a user-friendly interface that adapts to different screen sizes and devices.
+
+## 🧰 Tech Stack
+
+| Technology | Description |
+| --- | --- |
+| Node.js | Server-side runtime environment |
+| Express | Web framework for building web applications |
+| React | Front-end framework for building user interfaces |
+| MongoDB | NoSQL database for storing data |
+| Redux | State management library for managing application state |
+| Stripe | Payment gateway for processing transactions |
+| Ant Design | UI library for building user interfaces |
+
+## 📁 Project Structure
+
+```
+src/
+app/
+components/
+DefaultLayout.js
+Spinner.js
+...
+containers/
+App.js
+BookingCar.js
+...
+models/
+carModel.js
+bookingModel.js
+...
+pages/
+Home.js
+Login.js
+Register.js
+...
+reducers/
+alertsReducer.js
+carsReducer.js
+bookingsReducer.js
+...
+actions/
+bookingActions.js
+...
+store.js
+index.js
+reportWebVitals.js
+App.css
+index.css
+package.json
+```
+
+## ⚙️ How to Run
+
+### Setup
+
+1. Clone the repository: `git clone https://github.com/sheycars/sheycars.git`
+2. Install dependencies: `npm install`
+3. Create a MongoDB database: `mongod`
+4. Create a Stripe account and obtain a test API key: `stripe`
+5. Update the `config.js` file with your Stripe API key and MongoDB database URL
+
+### Environment
+
+1. Set environment variables:
+	* `MONGODB_URI`: MongoDB database URL
+	* `STRIPE_API_KEY`: Stripe API key
+	* `NODE_ENV`: Environment (e.g. development, production)
+
+### Build
+
+1. Run the build script: `npm run build`
+
+### Deploy
+
+1. Deploy the application to a production environment (e.g. Heroku, AWS)
+
+## 🧪 Testing Instructions
+
+1. Run the test script: `npm run test`
+2. Use a testing framework such as Jest or Mocha to write tests for the application
+3. Use a testing library such as Enzyme or React Testing Library to test React components
 
 
-Getting Started with Create React App
-This project was bootstrapped with Create React App.
+SheyCars is developed by HariKrishna, a full-stack developer with a passion for building scalable and maintainable software applications.
 
-Available Scripts
-In the project directory, you can run:
+## 📝 License
 
-npm start
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in your browser.
-
-The page will reload when you make changes.
-You may also see any lint errors in the console.
-
-npm test
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
-
-npm run build
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
-
-See the section about deployment for more information.
-
-npm run eject
-Note: this is a one-way operation. Once you eject, you can't go back!
-
-If you aren't satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-Learn More
-You can learn more in the Create React App documentation.
-
-To learn React, check out the React documentation.
-
-Code Splitting
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-Analyzing the Bundle Size
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-Making a Progressive Web App
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-Advanced Configuration
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-Deployment
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-npm run build fails to minify
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+SheyCars is licensed under the MIT License.
